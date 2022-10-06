@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    color: var(--popcorn);
+    margin-top: 150px;
+}
+
+#dedicated {
+    text-align: center;
+    font-size: 25px;
+}
+
+#team_table {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    table-layout: fixed;
+}
+
+#team_table tr td div {
+    overflow-y: scroll;
+    height: 650px;
+    width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#team_table i {
+    font-size: 65px;
+    text-align: center;
+    margin-top: -100px;
+    color: var(--popcorn);
+    transition: 0.3s;
+}
+
+#team_table i:hover {
+    color: var(--popcorn2);
+}
+
+#team_table tr {
+    max-height: 100px;
+}
+
+#team_table td img {
+    height: 650px;
+    width: auto;
+    margin-bottom: -100px;
+}
+
+#team_table p {
+    margin-top: 100px;
+}

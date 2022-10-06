@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/ce9e216765.js" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <title>___</title>
+
+        <script src="load_constant_items.js"></script>
+
+        <style>
+            h1 {
+                text-align: center;
+                color: var(--popcorn);
+                margin-top: 150px;
+            }
+
+            #form_container {
+                margin: 50px auto;
+                background-color: var(--popcorn);
+                width: 50%;
+                border-radius: 10px;
+                color: white;
+                padding: 50px;
+            }
+
+            #contact_form {
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="load_header"></div>
+
+        <h1>Contact US</h1>
+
+        <div id="form_container">
+            <form id="contact_form">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name">
+                <br><br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" style="width: 100%" rows="10"></textarea>
+                <br><br>
+                <label>Reason(s) for Contact:</label>
+                <br>
+                <input type="checkbox" id="past_order" value="past_order" style="margin-left: 20px">
+                <label for="past_order">Future Order</label><br>
+                <input type="checkbox" id="future_order" value="future_order" style="margin-left: 20px">
+                <label for="future_order">Past Order</label><br>
+                <input type="checkbox" id="machine" value="machine" style="margin-left: 20px">
+                <label for="machine">Machine Issues</label><br>
+                <input type="checkbox" id="other" value="other" style="margin-left: 20px">
+                <label for="other">Other</label>
+                <br><br>
+                <input type="submit" value="Submit" style="font-size: 20px">
+            </form>
+        </div>
+
+        <div id="load_footer"></div>
+    </body>
+</html>

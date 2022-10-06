@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/ce9e216765.js" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="products.css">
+
+        <title>___</title>
+
+        <script src="load_constant_items.js"></script>
+        <script src="products.js"></script>
+    </head>
+    <body>
+        <div id="load_header"></div>
+
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <h3>Items:</h3>
+            <p id="all_cart_items"></p>
+            <h3>Total:</h3>
+            <p id="total_cost">$0.00</p>
+        </div>
+
+        <table id="all_products" cellspacing="100">
+            <tr>
+                <td>
+                    <img id="img1" src="/images/item1.jpg" onmouseover="hover_source(1)" onmouseleave="non_hover_source(1)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img2" src="/images/item2.jpg" onmouseover="hover_source(2)" onmouseleave="non_hover_source(2)">
+                    <h2>Zombie Popcorn</h2>
+                    <p><strong>$8.50</strong></p>
+                    <p>Zombie popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Zombie Popcorn', 8.50)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Zombie Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img3" src="/images/item1.jpg" onmouseover="hover_source(3)" onmouseleave="non_hover_source(3)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img4" src="/images/item1.jpg" onmouseover="hover_source(4)" onmouseleave="non_hover_source(4)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img5" src="/images/item1.jpg" onmouseover="hover_source(5)" onmouseleave="non_hover_source(5)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img6" src="/images/item1.jpg" onmouseover="hover_source(6)" onmouseleave="non_hover_source(6)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img id="img7" src="/images/item1.jpg" onmouseover="hover_source(7)" onmouseleave="non_hover_source(7)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img8" src="/images/item1.jpg" onmouseover="hover_source(8)" onmouseleave="non_hover_source(8)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+                <td>
+                    <img id="img9" src="/images/item1.jpg" onmouseover="hover_source(9)" onmouseleave="non_hover_source(9)">
+                    <h2>Cheese Popcorn</h2>
+                    <p><strong>$6.75</strong></p>
+                    <p>Cheesy popcorn is so good because it tastes so good and whoopdie doo</p>
+                    <div class="add_cart" onclick="add_to_cart('Cheese Popcorn', 6.75)">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart('Cheese Popcorn')"></i>
+                </td>
+            </tr>
+        </table>        
+
+        <div id="load_footer"></div>
+    </body>
+</html>
