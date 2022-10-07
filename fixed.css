@@ -154,4 +154,10 @@ a {
         width: 30px;
         margin-left: -10px !important;
     }
+    
+    .switch_popping {
+        padding: 20px 0;
+        font-size: 15px;
+        border-radius: 3px;
+    } 
 }
