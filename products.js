@@ -77,3 +77,44 @@ function calc_total() {
 
     return total.toFixed(2);
 }
+
+class popcorn_package {
+    constructor(name, price, description) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+    }
+}
+
+num_rows = 3;
+all_names = ["Cheese Popcorn", "Zombie Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn"];
+all_prices = [6.75, 8.50, 6.75, 6.75, 6.75, 6.75, 6.75, 6.75, 6.75];
+all_descriptions = ["Cheese is awesome", "Zombie is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome"];
+all_packages = [];
+
+function make_matches() {
+    for(i = 0; i < all_names.length; i++) {
+        new_package = new popcorn_package(all_names[i], all_prices[i], all_descriptions[i]);
+        all_packages.push(new_package);
+    }
+}
+
+function create_elements() {
+    products_section = document.getElementById("all_products");
+    
+    total_add = "";
+    j = 0;
+    
+    for(i = 0; i < num_rows; i++) {
+        total_add += "<tr>";
+        for (j = (3 * i); j < (3 * (i + 1)); j++) {
+            total_add += '<td><img id="img' + (j + 1) + '" src="images/item' + (j + 1) + '.jpg" onmouseover="hover_source(' + (j + 1) + ')" onmouseleave="non_hover_source(' + (j + 1) + ')"><h2>' + all_packages[j].name + '</h2><p><strong>$' + all_packages[j].price + '</strong></p><p>' + all_packages[j].description + '</p><div class="add_cart" onclick="add_to_cart(\'' + all_packages[j].name + '\', ' + all_packages[j].price + ')">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart(\'' + all_packages[j].name + '\')"></i></td>'
+        }
+        total_add += "</tr>";
+    }
+
+    products_section.innerHTML = total_add;
+}
+
+make_matches();
+create_elements();

@@ -32,11 +32,11 @@ a {
 }
 
 #navbar li { 
-    display: table-cell; 
+    display: inline-block; 
     position: relative; 
 }
 
-#navbar a {
+#navbar .link {
     color: var(--popcorn);
     text-transform: uppercase;
     text-decoration: none;
@@ -46,7 +46,7 @@ a {
     position: relative;
 }
 
-#navbar a:after {    
+#navbar .link:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -59,16 +59,23 @@ a {
     width: 0;
 }
 
-#navbar a:hover:after { 
+#navbar .link:hover:after { 
     width: 100%; 
     left: 0; 
     background: var(--popcorn2);
 }
 
 #logo_link_img {
-    width: 20px;
-    height: 20px;
-    transition: 0.5s;
+    width: 60px !important;
+    height: 60px !important;
+    position: absolute;
+    left: -150px;
+    top: -38px;
+    transition: 0.3s;
+}
+
+#logo_link_img:hover {
+    transform: scale(1.5);
 }
 
 #separator {

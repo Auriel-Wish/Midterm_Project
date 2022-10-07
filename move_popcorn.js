@@ -39,3 +39,39 @@ function stop_popcorn() {
         document.getElementById(curr_id).style.marginTop = "0px";
     }
 }
+
+
+num_list = [];
+
+function make_num_list() {
+    for (i = 1; i < 10; i++) {
+        num_list.push(i);
+    }
+}
+
+function shuffle() {
+    currentIndex = num_list.length;
+
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      [num_list[currentIndex], num_list[randomIndex]] = [num_list[randomIndex], num_list[currentIndex]];
+    }
+}
+
+function create_fixed_elements() {
+    kernel_section = document.getElementById("popcorn_container");
+    total_add = "<tr>";
+    
+    for(i = 0; i < num_list.length; i++) {
+        total_add += '<td><img src="images/single_popcorn.jpg" class="kernel" id="popcorn_' + num_list[i] + '"></td>';
+    }
+    total_add += "</tr>";
+
+    kernel_section.innerHTML = total_add;
+}
+
+make_num_list();
+shuffle();
+create_fixed_elements();

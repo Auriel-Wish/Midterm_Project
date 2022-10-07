@@ -23,6 +23,11 @@ h1 {
     text-align: center;
 }
 
+.text p {
+    width: 90%;
+    margin: auto;
+}
+
 .media {
     width: 70%;
 }
