@@ -72,7 +72,7 @@ h2 {
         font-size: 30px;
     }
     #services_intro {
-        display: none;
+        background-image: none;
         background-color: var(--popcorn);
     }
 }
