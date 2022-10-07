@@ -152,9 +152,8 @@ a {
 
 .kernel {
     width: 30px;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: 2px !important;
+    margin-right: 7px !important;
     transition: 0.5s;
-    position: absolute;
 }
 }
