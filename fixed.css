@@ -147,3 +147,14 @@ a {
 #footer a:hover {
     color: var(--popcorn2);
 }
+
+@media only screen and (max-width: 600px) {
+
+.kernel {
+    width: 30px;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    transition: 0.5s;
+    position: absolute;
+}
+}
