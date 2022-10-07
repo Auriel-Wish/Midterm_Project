@@ -71,4 +71,8 @@ h2 {
     #services_intro h1 {
         font-size: 30px;
     }
+    #services_intro {
+        display: none;
+        background-color: var(--popcorn);
+    }
 }
