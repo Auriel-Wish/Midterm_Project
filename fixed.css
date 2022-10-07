@@ -150,11 +150,7 @@ a {
 
 @media only screen and (max-width: 600px) {
 
-.kernel {
-    width: 30px;
-    margin-right: 25px !important;
-    margin-left: 25px !important;
-    position: absolute;
-    transition: 0.5s;
-}
+    .kernel {
+        width: 30px;
+    }
 }
