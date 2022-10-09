@@ -50,3 +50,10 @@
     cursor: pointer;
     color: var(--popcorn2);
 }
+
+@media only screen and (max-width: 600px) {
+    #all_products {
+        display: block;
+        margin-left: 350px;
+    }
+}
