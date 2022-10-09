@@ -53,10 +53,10 @@
 
 @media only screen and (max-width: 600px) {
     #all_products {
-        margin-left: 50px;
+        margin-left: 60px;
     }
     #all_products td {
         display: block;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 }
