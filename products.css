@@ -39,6 +39,7 @@
     top: 200px;
     background-color: rgb(242, 242, 242);
     padding: 30px;
+    
 }
 
 #cart p {
@@ -52,12 +53,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #all_products {
-        margin-left: 80px;
+    
+    * {
         overflow-x: hidden;
     }
+    
+    #all_products {
+        margin-left: 80px;
+    }
+    
     #all_products td {
         display: block;
-        overflow-x: hidden;
     }
 }
