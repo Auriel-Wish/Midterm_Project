@@ -1,4 +1,8 @@
-window.onscroll = function() {change_navbar()};
+window.onscroll = function() {
+    if (window.innerWidth > 1100) {
+        change_navbar()
+    }
+};
 var a_tags = document.querySelectorAll('.link');
 
 function change_navbar() {
