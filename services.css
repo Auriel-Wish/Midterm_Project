@@ -72,10 +72,10 @@ h2 {
     #services_intro h1 {
         font-size: 40px;
     }
-    
+
     #services_intro {
-        width: 100vh;
-        height: auto;
+        background-image: none;
+        background-color: var(--popcorn2);
     }
     
     #img_holder img {
