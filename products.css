@@ -50,3 +50,25 @@
     cursor: pointer;
     color: var(--popcorn2);
 }
+
+@media screen and (max-width: 1100px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    #all_products td {
+        display: block;
+        margin-left: 30%;
+
+    }
+
+    #all_products tr {
+        margin: 0 !important;
+        padding: 0px !important;
+    }
+
+    #all_products img {
+        height: auto;
+    }
+}
