@@ -66,14 +66,3 @@ h2 {
 #img_holder2 img {
     width: 500px;
 }
-
-@media only screen and (max-width: 600px) {
-    #services_intro h1 {
-        font-size: 30px;
-    }
-    #services_intro {
-        background-image: none;
-        background-color: var(--popcorn);
-        margin-bottom: -250px;
-    }
-}

@@ -23,25 +23,10 @@
         <div id="load_header"></div>
 
         <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="text"><div>Caption Text 1</div></div>
-                <img src="images/intro_pic_1.jpg" style="width:100%">
-            </div>
+            <div id="all_slides"></div>
             
-            <div class="mySlides fade">
-                <div class="text"><div>Caption Text 2</div></div>
-                <img src="images/intro_pic_2.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="text"><div>Caption Text 3</div></div>
-                <img src="images/intro_pic_3.jpg" style="width:100%">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-circle-chevron-left"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-circle-chevron-right"></i></a>
-            
+            <a class="prev" onclick="plus_slides(-1)"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <a class="next" onclick="plus_slides(1)"><i class="fa-solid fa-circle-chevron-right"></i></a>
         </div>
 
         <h2>Why Our Popcorn?</h2>
@@ -49,25 +34,8 @@
 
         <h2 style="margin-top: 50px">It's Simple...</h2>
         <table id="simple">
-            <tr>
-                <td><img src="images/intro_pic_1.jpg"></td>
-                <td><i class="fa-solid fa-arrow-right-long"></i></td>
-                <td><img src="images/intro_pic_2.jpg"></td>
-                <td><i class="fa-solid fa-arrow-right-long"></i></td>
-                <td><img src="images/intro_pic_1.jpg"></td>
-                <td><i class="fa-solid fa-arrow-right-long"></i></td>
-                <td><img src="images/intro_pic_3.jpg"></td>
-            </tr>
-            <tr>
-                <td><p>words words words<br>words words words<br>words words words<br>words words words<br></p></td>
-                <td></td>
-                <td><p>words words words<br>words words words<br>words words words<br>words words words<br></p></td>
-                <td></td>
-                <td><p>words words words<br>words words words<br>words words words<br>words words words<br></p></td>
-                <td></td>
-                <td><p>words words words<br>words words words<br>words words words<br>words words words<br></p></td>
-                <td></td>
-            </tr>
+            <tr id="simple_tr1"></tr>
+            <tr id="simple_tr2"></tr>
         </table>
 
         <div id="load_footer"></div>
