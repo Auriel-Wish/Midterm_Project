@@ -71,6 +71,8 @@ h2 {
 
     #services_intro h1 {
         font-size: 40px;
+        background-image: none;
+        background-color: var(--popcorn2);
     }
 
     #img_holder img {
