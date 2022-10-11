@@ -71,9 +71,14 @@ h2 {
 
     #services_intro h1 {
         font-size: 40px;
-        background-image: none;
-        background-color: var(--popcorn2);
+        margin-right: 15%;
     }
+    
+    #services_intro {
+        width: 100vh;
+        height: auto;
+    }
+    
 
     #img_holder img {
         width: 90%;
