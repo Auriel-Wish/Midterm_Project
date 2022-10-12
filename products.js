@@ -94,14 +94,22 @@ class popcorn_package {
 }
 
 num_rows = 3;
-all_names = ["Cheese Popcorn", "Zombie Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn", "Cheese Popcorn"];
-all_prices = [6.75, 8.50, 6.75, 6.75, 6.75, 6.75, 6.75, 6.75, 6.75];
-all_descriptions = ["Cheese is awesome", "Zombie is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome", "Cheese is awesome"];
+all_names = ["Salted-popcorn", "Theater (butter) popcorn", "Caramel Popcorn", "Kettle Corn", "Zombie Special", "Peri-Peri Popcorn", "Vegan Popcorn", "Peanut butter Popcorn", "Cheese Popcorn"];
+all_prices = [6.75, 7.75, 8.00, 7.75, 8.00, 9.00, 5.00, 8.00, 7.75];
+all_descriptions = ["I don’t think we need to tell you what this is. No special ingredients. The basic salted popcorn can be a great snack when accompanied by a nice beverage or something sweet.", 
+                    "Perfect for a movie night — you can bring the theater feel right to your living room with the classic butter popcorn. Perfect snack to enjoy with friends and family.", 
+                    "For the ones with a sweet tooth, we got you covered. This delicious blend of caramel and popcorn is addictive and tasty. Try to share it if you can!",
+                    "Another OG popcorn. For people who want something a little more healthy and a little less sweet than caramel popcorn, this is a perfect choice. ",
+                    "BOO! This popcorn is flavored with some of your favorite candies such as TWIX and Kit-Kat. This flavor is only available for a limited time, so get it while you can!",
+                    "Finally, something with a little kick to it. Flavored with the infamous Peri-Peri seasoning this popcorn just proves that Peri-Peri goes well with just about anything.",
+                    "For those on a diet, we didn’t forget about you! This vegan popcorn is perfect for you. It's about as healthy as popcorn can get, but tastes indistinguishable from normal popcorn.",
+                    "Before you question this one, trust us, you need to try it! Arguably one of our top sellers, this popcorn has a great blend of sweetness and peanut butter. It’s truly unique!",
+                    "For all the cheese lovers out there. This flavor is another classic and serves as a great alternative to the butter popcorn. Grab some while you can!"];
 all_packages = [];
 
 function make_matches() {
     for(i = 0; i < all_names.length; i++) {
-        new_package = new popcorn_package(all_names[i], all_prices[i], all_descriptions[i]);
+        new_package = new popcorn_package(all_names[i], all_prices[i].toFixed(2), all_descriptions[i]);
         all_packages.push(new_package);
     }
 }

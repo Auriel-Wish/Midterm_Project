@@ -1,5 +1,5 @@
 all_names = ["Auriel Wish", "Josh Lamothe", "Ranvir Malik", "Ilan Hammond"];
-all_descriptions = ["He is cool because", "He is cool because", "He is cool because", "He is cool because"];
+all_descriptions = ["He is cool because", "Hi I’m Josh, a part of the popcorn team! My favorite type of popcorn is kettle corn because I love the sweet and salty combo. Mixing chocolate with the kettle corn also makes for a fire combo. I really love eating popcorn while I watch a good movie with my friends, or while I am watching a big football game. Popcorn helps bring people together and is a classic snack for spending quality time with friends.", "Hi I’m Ranvir, a proud member of the popcorn team! My favorite type of popcorn is the traditional butter popcorn. I think popcorn is a great snack, especially when watching shows or movies. Popcorn is essential for any movie night with friends or family, so order some of the best from this site!", "He is cool because"];
 num_rows = 2;
 
 function create_elements() {

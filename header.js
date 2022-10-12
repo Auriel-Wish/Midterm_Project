@@ -1,8 +1,9 @@
 window.onscroll = function() {
     if (window.innerWidth > 1100) {
-        change_navbar()
+        change_navbar();
     }
 };
+
 var a_tags = document.querySelectorAll('.link');
 
 function change_navbar() {
@@ -66,7 +67,6 @@ function has_switched(old_width) {
 window.onresize = function resize() {
     old_width = curr_width;
     curr_width = window.innerWidth;
-    console.log("checking");
     if (has_switched(old_width)) {
         location.reload();
     }
