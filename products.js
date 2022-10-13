@@ -1,10 +1,3 @@
-window.onscroll = function() {
-    console.log("test");
-    if (window.innerWidth > 1100) {
-        show_cart();
-    }
-};
-
 function hover_source(img_num) {
     img_id = "#img" + img_num;
     new_src = "images/item" + img_num + "_alt.jpg";
@@ -136,15 +129,36 @@ function create_elements() {
     products_section.innerHTML = total_add;
 }
 
-function show_cart() {
-    var cart = document.getElementById("cart");
-    if (document.documentElement.scrollTop > 100) {
-        cart.style.display = "none";
+prev_pos = 0
+curr_pos = 0;
+
+function remove_cart() {
+    line = document.getElementById("load_footer").offsetTop - 500;
+
+    prev_pos = curr_pos;
+    curr_pos = document.documentElement.scrollTop;
+
+    if (switched_places(prev_pos, curr_pos) == 1) {
+        $("#cart").fadeOut();
+    }
+    else if (switched_places(prev_pos, curr_pos) == 2) {
+        $("#cart").fadeIn();
     }
 }
 
+function switched_places(prev_pos, curr_pos) {
+    if (prev_pos < line && curr_pos > line) {
+        return 1;
+    }
+    else if (prev_pos > line && curr_pos < line) {
+        return 2;
+    }
+    else {
+        return 0;
+    }
+}
 
-
+window.addEventListener('scroll', remove_cart);
 
 make_matches();
 create_elements();
