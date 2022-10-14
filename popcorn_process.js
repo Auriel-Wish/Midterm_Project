@@ -6,7 +6,7 @@ class process_package {
 }
 
 all_colors = ["rgb(249, 249, 249)", "rgb(255, 245, 204)", "rgb(255, 237, 167)", "rgb(255, 227, 116)", "rgb(225, 190, 47)", "rgb(179, 156, 66)"];
-all_headers = ["THe Kernel Stage", "What's Inside a Kernel?", "The Heating Stage", "Pop!", "Snack Time!"];
+all_headers = ["The Kernel Stage", "What's Inside a Kernel?", "The Heating Stage", "Pop!", "Snack Time!"];
 all_explanations = ["There are many different strains of popcorn, each with its own unique factors in mind (disease, how easily they grow, etc). Each strain has a particular flavor, which is why a different strain is used for movie popcorn vs caramel corn. Once the ideal corn is selected, it is planted in rows that intersect the soil at 90 degrees. This method allows for machine harvesting.",
                     "Each kernel is made up of a plant embryo, a starchy endosperm that feeds the embryo, and a hard exterior called the bran or hull. And within each kernel is a small droplet of water - the key to its'pop'",
                     "Once heat is applied to the dried kernels, the droplet of water converts to steam; subsequently, the pressure within begins to build. Once that pressure overcomes the strength of the hull, the kernel explodes.",
