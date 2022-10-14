@@ -77,7 +77,7 @@ h2 {
         background-image: none;
         background-color: var(--popcorn);
         margin-bottom: -15%;
-        margin-top: -15%;
+        height: 80%
     }
 
     #img_holder img {
