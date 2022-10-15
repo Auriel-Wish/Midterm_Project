@@ -36,6 +36,19 @@
             #contact_form {
                 margin: 0 auto;
             }
+
+            #error_div {
+                width: 50%;
+                color: red;
+                margin: auto;
+            }
+
+            #submitted_div {
+                width: 50%;
+                color: var(--popcorn);
+                font-weight: bold;
+                margin: auto;
+            }
         </style>
     </head>
     <body>
@@ -43,6 +56,8 @@
 
         <h1>Contact Us</h1>
 
+
+        <div id="error_div"></div>
         <div id="form_container">
             <form id="contact_form">
                 <label for="name">Name:</label>
@@ -55,11 +70,11 @@
                 <br><br>
                 <label>Reason(s) for Contact:</label>
                 <br>
-                <input type="checkbox" id="past_order" value="past_order" style="margin-left: 20px">
+                <input type="checkbox" id="past_order" value="past order" style="margin-left: 20px">
                 <label for="past_order">Future Order</label><br>
-                <input type="checkbox" id="future_order" value="future_order" style="margin-left: 20px">
+                <input type="checkbox" id="future_order" value="future order" style="margin-left: 20px">
                 <label for="future_order">Past Order</label><br>
-                <input type="checkbox" id="machine" value="machine" style="margin-left: 20px">
+                <input type="checkbox" id="machine" value="machine issues" style="margin-left: 20px">
                 <label for="machine">Machine Issues</label><br>
                 <input type="checkbox" id="other" value="other" style="margin-left: 20px">
                 <label for="other">Other</label>
@@ -67,7 +82,10 @@
                 <input type="submit" value="Submit" style="font-size: 20px">
             </form>
         </div>
+        <div id="submitted_div"></div>
 
         <div id="load_footer"></div>
+
+        <script src="contact.js"></script>
     </body>
 </html>
