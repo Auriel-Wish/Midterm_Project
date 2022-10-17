@@ -122,13 +122,14 @@ function create_elements() {
         for(i = 0; i < num_rows; i++) {
             total_add += "<tr>";
             for (j = (3 * i); j < (3 * (i + 1)); j++) {
-                total_add += '<td><img id="img' + (j + 1) + '" src="images/item' + (j + 1) + '.jpg" onmouseover="hover_source(' + (j + 1) + ')" onmouseleave="non_hover_source(' + (j + 1) + ')"><h2>' + all_packages[j].name + '</h2><p><strong>$' + all_packages[j].price + '</strong></p><p>' + all_packages[j].description + '</p><div class="add_cart" onclick="add_to_cart(\'' + all_packages[j].name + '\', ' + all_packages[j].price + ')">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart(\'' + all_packages[j].name + '\')"></i></td>';
+                total_add += '<td onmouseover="hover_source(' + (j + 1) + ')" onmouseleave="non_hover_source(' + (j + 1) + ')"><img id="img' + (j + 1) + '" src="images/item' + (j + 1) + '.jpg"><h2>' + all_packages[j].name + '</h2><p><strong>$' + all_packages[j].price + '</strong></p><p>' + all_packages[j].description + '</p><div class="add_cart" onclick="add_to_cart(\'' + all_packages[j].name + '\', ' + all_packages[j].price + ')">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart(\'' + all_packages[j].name + '\')"></i></td>'
+
             }
             total_add += "</tr>";
         }
     } else {
         for(i = 0; i < all_names.length; i++) {
-            total_add += '<td><img id="img' + (j + 1) + '" src="images/item' + (j + 1) + '.jpg" onmouseover="hover_source(' + (j + 1) + ')" onmouseleave="non_hover_source(' + (j + 1) + ')"><h2>' + all_packages[j].name + '</h2><p><strong>$' + all_packages[j].price + '</strong></p><p>' + all_packages[j].description + '</p><div class="add_cart" onclick="add_to_cart(\'' + all_packages[j].name + '\', ' + all_packages[j].price + ')">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart(\'' + all_packages[j].name + '\')"></i></td>';
+            total_add += '<td onmouseover="hover_source(' + (j + 1) + ')" onmouseleave="non_hover_source(' + (j + 1) + ')"><img id="img' + (j + 1) + '" src="images/item' + (j + 1) + '.jpg"><h2>' + all_packages[j].name + '</h2><p><strong>$' + all_packages[j].price + '</strong></p><p>' + all_packages[j].description + '</p><div class="add_cart" onclick="add_to_cart(\'' + all_packages[j].name + '\', ' + all_packages[j].price + ')">Add to Cart</div><i class="fa-solid fa-minus" onclick="remove_from_cart(\'' + all_packages[j].name + '\')"></i></td>';
         }
     }
     products_section.innerHTML = total_add;
