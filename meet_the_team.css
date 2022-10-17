@@ -50,7 +50,8 @@ h1 {
 }
 
 #team_table p {
-    margin-top: 100px;
+    margin: 100px auto 0 auto;
+    width: 90%;
 }
 
 #team_table h2 {
