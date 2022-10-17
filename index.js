@@ -1,4 +1,4 @@
-all_headers = ["The Popcorn Guys", "Innovating One Kernel<br>at a Time", "Taste the Difference"];
+all_headers = ["The Popcorn Guys", "Improving Your Experience<br>One Kernel at a Time", "Taste the Difference"];
 num_simple_pics = 4;
 all_simple_descriptions = ["It's simple", "It's simple", "It's simple", "It's simple"];
 
