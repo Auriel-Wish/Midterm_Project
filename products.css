@@ -51,12 +51,22 @@
     color: var(--popcorn2);
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
     #all_products img {
         height: auto;
     }
-}
 
+    #all_products td {
+        display: table-cell;
+        margin-left: 15%;
+        width: 150px;
+        
+    }
+
+    #all_products {
+        height: 300px;
+    }
+}
 @media screen and (max-width: 1100px) {
 
     * {
@@ -65,20 +75,16 @@
 
     #all_products td {
         display: block;
-        margin-left: 18%;
+        margin-left: 20%;
 
     }
 
     #all_products tr {
         margin: 0 !important;
-        padding-right: 25px !important;
+        padding: 0px !important;
     }
 
     #all_products img {
         height: auto;
-    }
-
-    #cart {
-        padding: 18px !important;
     }
 }
