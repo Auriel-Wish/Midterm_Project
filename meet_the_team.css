@@ -49,3 +49,11 @@ h1 {
 #team_table p {
     margin-top: 100px;
 }
+
+
+#team_table h2 {
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    background-color: var(--popcorn);
+}
