@@ -57,12 +57,17 @@ function display_cart() {
         str = all_items[0].name + " x " + all_items[0].count;
         if (all_items.length > 1) {
             for (i = 1; i < all_items.length; i++) {
-                str += ",<br>" + all_items[i].name + " x " + all_items[i].count;
+                str += ", " + all_items[i].name + " x " + all_items[i].count;
             }
         }
     }
 
     document.getElementById("all_cart_items").innerHTML = str;
+    total_items = 0;
+    for (let i = 0; i < all_items.length; i++) {
+        total_items += all_items[i].count;
+    }
+    document.getElementById("num_items").innerHTML = total_items;
 
     str = "$" + calc_total();
     document.getElementById("total_cost").innerHTML = str;
@@ -129,36 +134,14 @@ function create_elements() {
     products_section.innerHTML = total_add;
 }
 
-prev_pos = 0
-curr_pos = 0;
-
-function remove_cart() {
-    line = document.getElementById("load_footer").offsetTop - 500;
-
-    prev_pos = curr_pos;
-    curr_pos = document.documentElement.scrollTop;
-
-    if (switched_places(prev_pos, curr_pos) == 1) {
-        $("#cart").fadeOut();
-    }
-    else if (switched_places(prev_pos, curr_pos) == 2) {
-        $("#cart").fadeIn();
-    }
+function close_cart() {
+    $('#cart').hide();
 }
 
-function switched_places(prev_pos, curr_pos) {
-    if (prev_pos < line && curr_pos > line) {
-        return 1;
-    }
-    else if (prev_pos > line && curr_pos < line) {
-        return 2;
-    }
-    else {
-        return 0;
-    }
+function open_cart() {
+    $('#cart').show();
 }
 
-window.addEventListener('scroll', remove_cart);
-
-make_matches();
+$('#close_cart').click(close_cart);
+$('#open_cart').click(open_cart);make_matches();
 create_elements();
