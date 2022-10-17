@@ -87,7 +87,7 @@ class popcorn_package {
 }
 
 num_rows = 3;
-all_names = ["Salted-popcorn", "Theater (butter) popcorn", "Caramel Popcorn", "Kettle Corn", "Zombie Special", "Peri-Peri Popcorn", "Vegan Popcorn", "Peanut butter Popcorn", "Cheese Popcorn"];
+all_names = ["Salted-popcorn", "Buttered Popcorn", "Caramel Popcorn", "Kettle Corn", "Zombie Special", "Peri-Peri Popcorn", "Vegan Popcorn", "Peanut butter Popcorn", "Cheese Popcorn"];
 all_prices = [6.75, 7.75, 8.00, 7.75, 8.00, 9.00, 5.00, 8.00, 7.75];
 all_descriptions = ["I don’t think we need to tell you what this is. No special ingredients. The basic salted popcorn can be a great snack when accompanied by a nice beverage or something sweet.", 
                     "Perfect for a movie night — you can bring the theater feel right to your living room with the classic butter popcorn. Perfect snack to enjoy with friends and family.", 
