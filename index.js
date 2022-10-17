@@ -46,7 +46,7 @@ function show_slides(new_index) {
       slides[i].style.display = "none";  
     }
 
-    slides[slide_index-1].style.display = "block";  
+    slides[slide_index - 1].style.display = "block";  
 }
 
 slides = document.getElementsByClassName("slide");
