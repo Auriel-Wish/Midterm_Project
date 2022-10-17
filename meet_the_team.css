@@ -19,7 +19,7 @@ h1 {
 #team_table tr td div {
     overflow-y: scroll;
     height: 650px;
-    width: 450px;
+    width: 400px;
     text-align: center;
     margin: 0 auto;
 }
@@ -41,7 +41,7 @@ h1 {
 }
 
 #team_table td img {
-    height: 650px;
+    height: 580px;
     width: 100%;
     margin-bottom: -100px;
 }
@@ -49,7 +49,6 @@ h1 {
 #team_table p {
     margin-top: 100px;
 }
-
 
 #team_table h2 {
     margin: 0;
