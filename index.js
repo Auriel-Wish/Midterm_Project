@@ -1,4 +1,4 @@
-all_headers = ["Caption Text 1", "Caption Text 2", "Caption Text 3"];
+all_headers = ["The Popcorn Guys", "Innovating One Kernel<br>at a Time", "Taste the Difference"];
 num_simple_pics = 4;
 all_simple_descriptions = ["It's simple", "It's simple", "It's simple", "It's simple"];
 
@@ -9,7 +9,7 @@ function create_elements() {
 
     total_add = "";
     for (i = 0; i < all_headers.length; i++) {
-        total_add += '<div class="slide fade"><div class="text"><div>' + all_headers[i] + '</div></div><img src="images/intro_pic_' + (i + 1) + '.jpg"></div>';
+        total_add += '<div class="slide fade"><div class="text"><div><strong>' + all_headers[i] + '</strong></div></div><img src="images/intro_pic_' + (i + 1) + '.jpg"></div>';
     }
     slideshow_section.innerHTML = total_add;
 
