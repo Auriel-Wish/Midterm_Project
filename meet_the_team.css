@@ -42,7 +42,7 @@ h1 {
 
 #team_table td img {
     height: 650px;
-    width: auto;
+    width: 100%;
     margin-bottom: -100px;
 }
 
