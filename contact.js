@@ -6,6 +6,7 @@ error_list = [];
 name_error = 'Name field is required.';
 message_error = 'Message field is required.';
 reason_for_contact_error = 'Please select at least one reason for contact.';
+month_error = 'Please select month of purchase.'
 
 submitted_div = document.getElementById('submitted_div');
 name = '';
@@ -38,6 +39,9 @@ function validate(event) {
     if (reasons.length <= 0) {
         error_list.push(reason_for_contact_error);
     }
+    if (br_list[0].style.display != 'none' && $('#how_long').val() == 'Select Month') {
+        error_list.push(month_error);
+    }
 
     event.preventDefault();
     if (error_list.length > 0) {
@@ -63,4 +67,26 @@ function submitted() {
     }
     submit_txt += 'We will get back to you shortly!'
     submitted_div.innerHTML = submit_txt;
+
+    document.getElementById('submit').scrollIntoView();
+}
+
+$('#past_order').click(check_if_past);
+br_list = $('.if_past');
+
+function check_if_past(event) {
+    if (event.target.checked) {
+        $('#how_long').show();
+        $('label[for="how_long"]').show();
+        for (let i = 0; i < br_list.length; i++) {
+            $(br_list[i]).show();
+        }
+    }
+    else {
+        $('#how_long').hide();
+        $('label[for="how_long"]').hide();
+        for (let i = 0; i < br_list.length; i++) {
+            $(br_list[i]).hide();
+        }
+    }
 }

@@ -49,6 +49,10 @@
                 font-weight: bold;
                 margin: auto;
             }
+
+            #how_long, label[for="how_long"], .if_past {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -71,15 +75,32 @@
                 <label>Reason(s) for Contact:</label>
                 <br>
                 <input type="checkbox" id="past_order" value="past order" style="margin-left: 20px">
-                <label for="past_order">Future Order</label><br>
+                <label for="past_order">Past Order</label><br>
                 <input type="checkbox" id="future_order" value="future order" style="margin-left: 20px">
-                <label for="future_order">Past Order</label><br>
+                <label for="future_order">Future Order</label><br>
                 <input type="checkbox" id="machine" value="machine issues" style="margin-left: 20px">
                 <label for="machine">Machine Issues</label><br>
                 <input type="checkbox" id="other" value="other" style="margin-left: 20px">
                 <label for="other">Other</label>
                 <br><br>
-                <input type="submit" value="Submit" style="font-size: 20px">
+                <label for="how_long">In what month did you make your purchase?</label>
+                <select id="how_long" name="how_long">
+                    <option value="Select Month">Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <br class="if_past"><br class="if_past">
+                <input id="submit" type="submit" value="submit" style="font-size: 20px">
             </form>
         </div>
         <div id="submitted_div"></div>
