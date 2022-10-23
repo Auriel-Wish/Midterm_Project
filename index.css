@@ -77,12 +77,13 @@ h2 {
 #simple {
     width: 90%;
     text-align: center;
+    font-size: 20px;
     margin: 0 auto;
 }
 
 #simple img {
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 

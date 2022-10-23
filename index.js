@@ -1,6 +1,6 @@
 all_headers = ["The Popcorn Guys", "Improving Your Experience<br>One Kernel at a Time", "Taste the Difference"];
 num_simple_pics = 4;
-all_simple_descriptions = ["It's simple", "It's simple", "It's simple", "It's simple"];
+all_simple_descriptions = ["Browse our website", "Choose one or more of our delicious flavors", "We will prepare and ship your popcorn promptly", "Enjoy your popcorn!"];
 
 function create_elements() {
     slideshow_section = document.getElementById("all_slides");
@@ -13,9 +13,9 @@ function create_elements() {
     }
     slideshow_section.innerHTML = total_add;
 
-    total_add = '<td><img src="images/intro_pic_1.jpg"></td>';
+    total_add = '<td><img src="images/simple1.png"></td>';
     for (i = 2; i < num_simple_pics + 1; i++) {
-        total_add += '<td><i class="fa-solid fa-arrow-right-long"></i></td><td><img src="images/intro_pic_' + i + '.jpg"></td>';
+        total_add += '<td><i class="fa-solid fa-arrow-right-long"></i></td><td><img src="images/simple' + i + '.jpg"></td>';
     }
     simple_section1.innerHTML = total_add;
 

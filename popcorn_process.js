@@ -26,7 +26,7 @@ function create_elements() {
     total_add = "";
     
     for(i = 0; i < all_packages.length; i++) {
-        total_add += '<tr><td class="text" style="background-image: linear-gradient(180deg,' + all_colors[i] + ', ' + all_colors[i + 1] + ');"><h3>' + all_packages[i].header + '</h3><p>' + all_packages[i].explanation + '</p><img class="popcorn_transform" src="images/stage' + (i + 1) + '.png"></td><td class="media"><img class="process_pic" src="images/intro_pic_' + (i + 1) + '.jpg"></td></tr>'
+        total_add += '<tr><td class="text" style="background-image: linear-gradient(180deg,' + all_colors[i] + ', ' + all_colors[i + 1] + ');"><h3>' + all_packages[i].header + '</h3><p>' + all_packages[i].explanation + '</p><img class="popcorn_transform" src="images/stage' + (i + 1) + '.png"></td><td class="media"><img class="process_pic" src="images/process_pic' + (i + 1) + '.jpg"></td></tr>'
     }
 
     transform_section.innerHTML = total_add;
