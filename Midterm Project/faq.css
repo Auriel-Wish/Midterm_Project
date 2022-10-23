@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: var(--popcorn);
+    margin-top: 150px;
+}
+
+#faq_section {
+    width: 80%;
+    margin: 50px auto;
+    color: white;
+}
+
+.question_section {
+    width: 100%;
+}
+
+.question_row {
+    background-color: var(--popcorn2);
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.question_row:hover {
+    background-color: var(--popcorn);
+}
+
+.question_row h2 {
+    display: inline;
+}
+
+.question_row i {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.answer_row {
+    background-color: var(--popcorn);
+    padding: 20px;
+}
+
+.answer_row p {
+    display: inline;
+}

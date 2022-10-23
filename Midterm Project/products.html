@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/ce9e216765.js" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="products.css">
+
+        <title>Our Products</title>
+
+        <script src="load_constant_items.js"></script>
+    </head>
+    <body>
+        <div id="load_header"></div>
+
+        <div id="open_cart"><i class="fa-solid fa-cart-shopping"></i><div id="num_items">0</div></div>
+        <div id="cart">
+            <div id="close_cart"><i class="fa-solid fa-x"></i></div>
+            <h2>Your Cart</h2>
+            <h3>Items:</h3>
+            <p id="all_cart_items"></p>
+            <h3>Total:</h3>
+            <p id="total_cost">$0.00</p>
+        </div>
+
+        <table id="all_products" cellspacing="100"></table>        
+
+        <div id="load_footer"></div>
+
+        <script src="products.js"></script>
+    </body>
+</html>

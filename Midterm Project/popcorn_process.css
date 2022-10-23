@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    color: var(--popcorn);
+    margin-top: 150px;
+}
+
+#transform_table {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.popcorn_transform {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.text {
+    width: 30%;
+    text-align: center;
+}
+
+.text p {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.media {
+    width: 70%;
+}
+
+.process_pic {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 1100px) {
+    .media {
+        display: none;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .popcorn_transform {
+        margin-bottom: 10px;
+    }
+}

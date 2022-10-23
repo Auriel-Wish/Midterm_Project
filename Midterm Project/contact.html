@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://kit.fontawesome.com/ce9e216765.js" crossorigin="anonymous"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <title>Contact Us</title>
+
+        <script src="load_constant_items.js"></script>
+
+        <style>
+            h1 {
+                text-align: center;
+                color: var(--popcorn);
+                margin-top: 150px;
+            }
+
+            #form_container {
+                margin: 50px auto;
+                background-color: var(--popcorn);
+                width: 50%;
+                border-radius: 10px;
+                color: white;
+                padding: 50px;
+            }
+
+            #contact_form {
+                margin: 0 auto;
+            }
+
+            #error_div {
+                width: 50%;
+                color: red;
+                margin: auto;
+            }
+
+            #submitted_div {
+                width: 50%;
+                color: var(--popcorn);
+                font-weight: bold;
+                margin: auto;
+            }
+
+            #how_long, label[for="how_long"], .if_past {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="load_header"></div>
+
+        <h1>Contact Us</h1>
+
+
+        <div id="error_div"></div>
+        <div id="form_container">
+            <form id="contact_form">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name">
+                <br><br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" style="width: 100%" rows="10"></textarea>
+                <br><br>
+                <label>Reason(s) for Contact:</label>
+                <br>
+                <input type="checkbox" id="past_order" value="past order" style="margin-left: 20px">
+                <label for="past_order">Past Order</label><br>
+                <input type="checkbox" id="future_order" value="future order" style="margin-left: 20px">
+                <label for="future_order">Future Order</label><br>
+                <input type="checkbox" id="machine" value="machine issues" style="margin-left: 20px">
+                <label for="machine">Machine Issues</label><br>
+                <input type="checkbox" id="other" value="other" style="margin-left: 20px">
+                <label for="other">Other</label>
+                <br><br>
+                <label for="how_long">In what month did you make your purchase?</label>
+                <select id="how_long" name="how_long">
+                    <option value="Select Month">Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <br class="if_past"><br class="if_past">
+                <input id="submit" type="submit" value="submit" style="font-size: 20px">
+            </form>
+        </div>
+        <div id="submitted_div"></div>
+
+        <div id="load_footer"></div>
+
+        <script src="contact.js"></script>
+    </body>
+</html>

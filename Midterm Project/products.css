@@ -1,0 +1,138 @@
+#all_products {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#all_products td {
+    width: 200px;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+#all_products td:hover {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+#all_products img {
+    width: 100%;
+    height: 350px;
+}
+
+.add_cart {
+    color: white;
+    background-color: var(--popcorn);
+    display: inline-block;
+    padding: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.add_cart:hover {
+    background-color: var(--popcorn2);
+}
+
+#cart {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    z-index: 11;
+    height: 100vh;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 2px 2px 5px -2px #888;
+    display: none;
+}
+
+#cart h2 {
+    font-size: 40px;
+}
+
+#cart h3 {
+    font-size: 30px;
+}
+
+#cart > *{
+    margin-left: 50px;
+}
+
+#total_cost {
+    font-size: 25px;
+}
+
+#open_cart {
+    position: fixed;
+    left: 0;
+    top: 150px;
+    font-size: 30px;
+    background-color: var(--popcorn);
+    color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    padding: 10px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#num_items {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#open_cart:hover {
+    background-color: var(--popcorn2);
+}
+
+#close_cart {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#close_cart:hover {
+    transform: scale(1.3);
+}
+
+#cart p {
+    width: 100%;
+}
+
+#all_products i {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--popcorn2);
+}
+
+@media screen and (max-width: 1700px) {
+    #all_products img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #all_products {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #all_products td {
+        text-align: center;
+    }
+
+    #cart {
+        width: 100%;
+    }
+
+    #all_products img {
+        width: 70%;
+        height: auto;
+    }
+    
+    #all_products tr {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
