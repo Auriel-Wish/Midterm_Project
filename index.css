@@ -66,6 +66,11 @@ h2 {
     font-size: 40px;
 }
 
+p {
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
 #why_us_exp {
     text-align: center;
     background-color: var(--lightgrey);
