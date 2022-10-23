@@ -66,17 +66,14 @@ h2 {
     font-size: 40px;
 }
 
-p {
-   padding-left: 5px;
-   padding-right: 5px;
-}
-
 #why_us_exp {
     text-align: center;
     background-color: var(--lightgrey);
     width: 70%;
     margin: 0 auto;
     padding: 50px 0;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 #simple {
