@@ -22,8 +22,9 @@
 
 #services_intro h1 {
     text-align: center;
-    color: var(--popcorn2);
-    font-size: 100px;
+    color: var(--popcorn);
+    font-size: 80px;
+    margin-top: 5%;
 }
 
 h2 {
