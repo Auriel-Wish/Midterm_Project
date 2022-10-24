@@ -68,7 +68,6 @@ h1 {
         #dedicated {
                 font-size:25px;
                 width: 95%;
-                margin-left: 40px;
         }
         #team_table tr td div{
                 overflow-y: none;
@@ -82,7 +81,7 @@ h1 {
         }
         #team_table {
                 width: 100%; 
-                margin-left: -25px;
+                margin-left: -50px;
         }
 
 }
