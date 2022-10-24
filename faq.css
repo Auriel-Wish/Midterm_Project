@@ -19,7 +19,7 @@ h1 {
     padding: 20px;
     cursor: pointer;
     transition: 0.2s;
-    font-size: 20%;
+    font-size: 60%
 }
 
 .question_row:hover {
