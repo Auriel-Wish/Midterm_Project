@@ -39,7 +39,7 @@ function validate(event) {
     if (reasons.length <= 0) {
         error_list.push(reason_for_contact_error);
     }
-    if (br_list[0].style.display != 'none' && $('#how_long').val() == 'Select Month') {
+    if ($('#past_order').is(':checked') && $('#how_long').val() == 'Select Month') {
         error_list.push(month_error);
     }
 
