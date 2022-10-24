@@ -80,9 +80,9 @@ h1 {
         #team_table i {
                 display: none;
         }
-        #team_table {
-                width: 110%; 
-                height: 80%;
+        #team_table td img {
+                width: 100%;
+                height: 70%;
         }
 
 }
