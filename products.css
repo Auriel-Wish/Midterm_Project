@@ -19,6 +19,13 @@
     height: 350px;
 }
 
+h1 {
+    text-align: center;
+    color: var(--popcorn);
+    font-size: 50px;
+    margin-top: 10%;
+}
+
 .add_cart {
     color: white;
     background-color: var(--popcorn);
