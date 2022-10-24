@@ -81,7 +81,8 @@ h1 {
                 display: none;
         }
         #team_table {
-                width: 100%; 
+                width: 110%; 
+                height: 80%;
         }
 
 }
