@@ -60,3 +60,24 @@ h1 {
     color: white;
     background-color: var(--popcorn);
 }
+
+@media screen and (max-width: 1100px) {
+        #team_table td {
+                display: block;
+        }
+        #dedicated {
+                font-size:25px;
+                width: 70%;
+        }
+        #team_table tr td div{
+                overflow-y: none;
+                overflow: visible;
+                height: auto;
+                padding-bottom: 50px;
+        }
+        #team_table i {
+                display: none;
+        }
+
+}
+
