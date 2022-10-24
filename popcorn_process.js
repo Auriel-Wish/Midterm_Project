@@ -1,3 +1,10 @@
+$(document).ready(function() {
+    if (window.innerWidth > 1100) {
+        $('#transform_table').fadeOut(0);
+        $('#transform_table').fadeIn(1000);
+    }
+});
+
 class process_package {
     constructor(header, explanation) {
         this.header = header;
