@@ -78,6 +78,9 @@ h1 {
         #team_table i {
                 display: none;
         }
+        #team_table {
+                margin-left: -10px;
+        }
 
 }
 
