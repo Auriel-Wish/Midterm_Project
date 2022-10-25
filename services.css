@@ -18,7 +18,6 @@
     width: 60%;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
-    padding: 40px;
 }
 
 #services_intro h1 {
@@ -26,6 +25,8 @@
     color: var(--popcorn);
     font-size: 80px;
     margin-top: 5%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 h2 {
@@ -70,11 +71,6 @@ h2 {
 
 @media screen and (max-width: 1100px) {
 
-    #outer {
-        padding-top: 75px;
-        padding-bottom: 50px;
-    }
-    
     #services_intro h1 {
         font-size: 40px;
     }
@@ -82,8 +78,8 @@ h2 {
     #services_intro {
         background-image: none;
         background-color: var(--popcorn);
-        margin-bottom: -15%;
-        height: 80%
+        margin-top: -15%;
+        height: 80%;
     }
 
     #img_holder img {
@@ -93,9 +89,6 @@ h2 {
 
     #service3 #img_holder2 img {
         display: none;
-    }
-    
-    #service3 {
-        text-align: center;
-    }
+    }   
+
 }
