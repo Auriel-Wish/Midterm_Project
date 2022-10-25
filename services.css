@@ -18,6 +18,7 @@
     width: 60%;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
+    padding: 10px 10px 5px 10px;
 }
 
 #services_intro h1 {
@@ -25,8 +26,6 @@
     color: var(--popcorn);
     font-size: 80px;
     margin-top: 5%;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 h2 {
