@@ -94,4 +94,8 @@ h2 {
     #service3 #img_holder2 img {
         display: none;
     }
+    
+    #service3 {
+        text-align: center;
+    }
 }
